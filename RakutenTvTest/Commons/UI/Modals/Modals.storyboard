@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarlowSemiCondensed-Regular.ttf">
+            <string>BarlowSemiCondensed-Regular</string>
+        </array>
+        <array key="BarlowSemiCondensed-SemiBold.ttf">
+            <string>BarlowSemiCondensed-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bottom Alert View Controller-->
+        <scene sceneID="lFA-85-Yjm">
+            <objects>
+                <viewController storyboardIdentifier="BottomAlertViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0CA-An-mxd" customClass="BottomAlertViewController" customModule="RakutenTvTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K4I-0e-z7u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLj-LP-6rq" userLabel="Alert Content Container View">
+                                <rect key="frame" x="16" y="30" width="343" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="l2u-zz-TPS">
+                                        <rect key="frame" x="16" y="0.0" width="311" height="70"/>
+                                        <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
+                                        <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="l2u-zz-TPS" firstAttribute="centerY" secondItem="qLj-LP-6rq" secondAttribute="centerY" id="1KO-V0-AZO"/>
+                                    <constraint firstAttribute="trailing" secondItem="l2u-zz-TPS" secondAttribute="trailing" constant="16" id="2Sf-w9-d4x"/>
+                                    <constraint firstItem="l2u-zz-TPS" firstAttribute="leading" secondItem="qLj-LP-6rq" secondAttribute="leading" constant="16" id="6cB-OC-nRh"/>
+                                    <constraint firstItem="l2u-zz-TPS" firstAttribute="top" secondItem="qLj-LP-6rq" secondAttribute="top" id="Qkv-ha-bRc"/>
+                                    <constraint firstAttribute="height" constant="70" id="p0s-UA-PRU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tgk-vz-gfw"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qLj-LP-6rq" firstAttribute="top" secondItem="tgk-vz-gfw" secondAttribute="top" constant="30" id="51D-U9-u99"/>
+                            <constraint firstItem="qLj-LP-6rq" firstAttribute="leading" secondItem="tgk-vz-gfw" secondAttribute="leading" constant="16" id="Rbu-OD-MUB"/>
+                            <constraint firstItem="qLj-LP-6rq" firstAttribute="trailing" secondItem="tgk-vz-gfw" secondAttribute="trailing" constant="-16" id="kYu-1H-pSm"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="alertView" destination="qLj-LP-6rq" id="z2z-TX-JYR"/>
+                        <outlet property="textLabel" destination="l2u-zz-TPS" id="4yP-B2-Yds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heT-1l-fjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.55072463768124" y="25.78125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2nv-UY-i6Q">
+            <objects>
+                <viewController storyboardIdentifier="GenericWinchDeliveryConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wge-h3-M6R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O9o-0a-nwy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZqQ-bo-fwQ">
+                                <rect key="frame" x="29.5" y="174" width="261" height="220"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8z-Xz-9UK">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="220"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="foh-ds-KsU">
+                                                <rect key="frame" x="16" y="30" width="229" height="63"/>
+                                                <string key="text">O guincho deixou o seu veículo
+no local informado?</string>
+                                                <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="18"/>
+                                                <color key="textColor" red="0.035294117649999998" green="0.1647058824" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4G-av-c0M">
+                                                <rect key="frame" x="16" y="156" width="229" height="40"/>
+                                                <color key="backgroundColor" red="0.035294117649999998" green="0.1647058824" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="MYa-GK-yUt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="16"/>
+                                                <state key="normal" title="Confirmar entrega">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="1" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="confirmationButtonTapped:" destination="wge-h3-M6R" eventType="touchUpInside" id="j3M-DL-Oje"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clique abaixo para confirmar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-jC-MF2">
+                                                <rect key="frame" x="16" y="123.5" width="229" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="BarlowSemiCondensed-Regular" family="Barlow Semi Condensed" pointSize="13"/>
+                                                <color key="textColor" red="0.035294117649999998" green="0.1647058824" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="1" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="foh-ds-KsU" secondAttribute="trailing" constant="16" id="0N5-sg-f2V"/>
+                                            <constraint firstAttribute="bottom" secondItem="i4G-av-c0M" secondAttribute="bottom" constant="24" id="CJK-LS-pcv"/>
+                                            <constraint firstItem="foh-ds-KsU" firstAttribute="leading" secondItem="w8z-Xz-9UK" secondAttribute="leading" constant="16" id="Cnf-qj-735"/>
+                                            <constraint firstItem="i4G-av-c0M" firstAttribute="leading" secondItem="w8z-Xz-9UK" secondAttribute="leading" constant="16" id="Fof-TG-ptG"/>
+                                            <constraint firstItem="qdt-jC-MF2" firstAttribute="leading" secondItem="w8z-Xz-9UK" secondAttribute="leading" constant="16" id="K8D-bV-SjS"/>
+                                            <constraint firstAttribute="height" constant="220" id="TcS-q0-3YM"/>
+                                            <constraint firstAttribute="trailing" secondItem="i4G-av-c0M" secondAttribute="trailing" constant="16" id="dLi-vM-eu6"/>
+                                            <constraint firstItem="foh-ds-KsU" firstAttribute="top" secondItem="w8z-Xz-9UK" secondAttribute="top" constant="30" id="gz4-31-Hpq"/>
+                                            <constraint firstItem="qdt-jC-MF2" firstAttribute="top" secondItem="foh-ds-KsU" secondAttribute="bottom" constant="30.5" id="kC3-Ys-JWO"/>
+                                            <constraint firstAttribute="trailing" secondItem="qdt-jC-MF2" secondAttribute="trailing" constant="16" id="vQW-e4-c1v"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kNe-vh-Tkf"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kNe-vh-Tkf" firstAttribute="trailing" secondItem="ZqQ-bo-fwQ" secondAttribute="trailing" constant="29.5" id="MsD-hW-ebU"/>
+                            <constraint firstItem="ZqQ-bo-fwQ" firstAttribute="leading" secondItem="kNe-vh-Tkf" secondAttribute="leading" constant="29.5" id="as0-Nr-zVd"/>
+                            <constraint firstItem="ZqQ-bo-fwQ" firstAttribute="centerX" secondItem="O9o-0a-nwy" secondAttribute="centerX" id="gWr-Rn-pfS"/>
+                            <constraint firstItem="ZqQ-bo-fwQ" firstAttribute="centerY" secondItem="O9o-0a-nwy" secondAttribute="centerY" id="vyb-U1-OIK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="genericWinchDeliveryConfirmationView" destination="O9o-0a-nwy" id="Ju9-hz-WW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a75-JJ-mZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5963" y="2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

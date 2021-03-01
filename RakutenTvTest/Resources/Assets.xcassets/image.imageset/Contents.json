@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "wonder-woman-1984-1609331188.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "wonder-woman-1984-1609331189.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "wonder-woman-1984-1609331190.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

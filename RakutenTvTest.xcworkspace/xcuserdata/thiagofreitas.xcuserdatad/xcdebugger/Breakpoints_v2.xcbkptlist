@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8B0AD03A-E80E-4453-8413-4D46F91D208C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85223BF0-D7B4-4713-A13B-4E068DC1D7FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Application/ApplicationRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "startApplication(in:startPoint:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5145297-1BF4-4BB1-ABFB-3BE04D0D4F6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Application/ApplicationRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "setRootNavigationController(_:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B816258-A33A-43FA-A3CE-2E7F14C3B792"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Services/MovieServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "movieList(success:onFailure:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38991ADA-8A9C-4ADE-81CA-E5D27FB16331"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "testMovieService()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1D33EA5-1A7F-4243-9AAB-CCBCBE113A8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "testMovieListServiceSucess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F38EC63F-91B1-4E92-8088-E1EF899903C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "movieList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A12DA90-C41B-4143-86F1-9A6632D4D7B7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "movieList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5A12DA90-C41B-4143-86F1-9A6632D4D7B7 - 60a821411d5aa155"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RakutenTvTest.MovieViewModel.movieList() -&gt; RxSwift.Observable&lt;Swift.Optional&lt;RakutenTvTest.MovieListResponse&gt;&gt;"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  uuid = "5A12DA90-C41B-4143-86F1-9A6632D4D7B7 - 444038fc22df9228"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;Swift.Optional&lt;RakutenTvTest.MovieListResponse&gt;&gt;) -&gt; RxSwift.Disposable in RakutenTvTest.MovieViewModel.movieList() -&gt; RxSwift.Observable&lt;Swift.Optional&lt;RakutenTvTest.MovieListResponse&gt;&gt;"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96266973-4575-47BD-9D96-FE37140A648E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "testMovieListServiceFailure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E3916E4-F63B-4364-A0C6-ED28C7209726"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Services/MovieServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "movieList(success:onFailure:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "005F5EA4-4513-4C35-A470-23627A01366E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "testMovieListServiceSucess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF38B062-19DB-4764-91B9-9B2E1AE25F03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testMovieListServiceSucess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECBC0C71-D80F-4140-8B3E-D11E1E0EFA78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "testMovieListServiceSucess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45B55635-7D0F-4348-95EB-9670C5ED1F4B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/MovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13FF8330-B292-4886-8099-12834552BDDA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Services/MovieServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "movieList(success:onFailure:onCompletion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13FF8330-B292-4886-8099-12834552BDDA - 769d8bf5e57677fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RakutenTvTest.MovieServices.movieList(success: (Swift.Optional&lt;RakutenTvTest.MovieListResponse&gt;, Swift.Optional&lt;RakutenTvTest.ServiceResponse&gt;) -&gt; (), onFailure: Swift.Optional&lt;(Swift.Optional&lt;RakutenTvTest.ServiceResponse&gt;) -&gt; ()&gt;, onCompletion: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Services/MovieServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1545">
+               </Location>
+               <Location
+                  uuid = "13FF8330-B292-4886-8099-12834552BDDA - ece7e9054c527e5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;RakutenTvTest.MovieListResponse&gt;, Swift.Optional&lt;RakutenTvTest.ServiceResponse&gt;) -&gt; () in RakutenTvTest.MovieServices.movieList(success: (Swift.Optional&lt;RakutenTvTest.MovieListResponse&gt;, Swift.Optional&lt;RakutenTvTest.ServiceResponse&gt;) -&gt; (), onFailure: Swift.Optional&lt;(Swift.Optional&lt;RakutenTvTest.ServiceResponse&gt;) -&gt; ()&gt;, onCompletion: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Services/MovieServices.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "204">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "956DA970-3025-4DDE-909C-E699C1B2CA20"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Services/MovieServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "movieStreaming(movieStreamingRequest:success:onFailure:onCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "856C7A65-5274-40FD-A1FE-0033482DC680"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "movieStreaming(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79830882-E9F7-4FA0-AED9-6E5635C9ADC2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "movieStreaming(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E317DAA-8421-46C4-9493-86CD9A594C10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/MovieViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73EE890B-C168-47A5-8FB8-B886B107034E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTestTests/RakutenTvTestTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "testCallMovieSucess()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D54719D-E890-4C86-8B4D-F847E15E3F21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewControllers/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "movie(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB3B7095-0828-4D8C-815F-3ED7C52DB2E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewControllers/MovieDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "movie(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB4CF65F-18F7-4EB8-AE59-911A7F2F9C38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "movie(movieId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FB4CF65F-18F7-4EB8-AE59-911A7F2F9C38 - 7bb0798b3fd7f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RakutenTvTest.MovieViewModel.movie(movieId: Swift.String) -&gt; RxSwift.Observable&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  uuid = "FB4CF65F-18F7-4EB8-AE59-911A7F2F9C38 - b4b5521d60cf924a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;) -&gt; RxSwift.Disposable in RakutenTvTest.MovieViewModel.movie(movieId: Swift.String) -&gt; RxSwift.Observable&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BE20194-8368-4E73-992B-B6185129E430"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "movie(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A076663-FF6A-4F33-B9C2-5A5FD16D30EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "movie(movieId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "849E0D5F-E6F4-41DE-83ED-A6FCD79180D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "movie(movieId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "849E0D5F-E6F4-41DE-83ED-A6FCD79180D0 - b4b5521d60cf9395"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;) -&gt; RxSwift.Disposable in RakutenTvTest.MovieViewModel.movie(movieId: Swift.String) -&gt; RxSwift.Observable&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  uuid = "849E0D5F-E6F4-41DE-83ED-A6FCD79180D0 - b6e5020544b076c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;, Swift.Optional&lt;RakutenTvTest.ServiceResponse&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;) -&gt; RxSwift.Disposable in RakutenTvTest.MovieViewModel.movie(movieId: Swift.String) -&gt; RxSwift.Observable&lt;Swift.Optional&lt;RakutenTvTest.MovieItemResponse&gt;&gt;"
+                  moduleName = "RakutenTvTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thiagofreitas/Documents/Projetos/Interview/RakutenTvTest/RakutenTvTest/Scenes/ViewModels/MovieViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "274">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "873AB457-6E0E-421C-99A9-AC254BA949CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RakutenTvTest/Scenes/Cells/MovieTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

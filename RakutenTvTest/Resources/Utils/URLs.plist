@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseUrl</key>
+	<string>https://gizmo.rakuten.tv/</string>
+	<key>movieList</key>
+	<string>v3/lists/estrenos-imprescindibles-en-taquilla?classification_id=6&amp;device_identifier=ios&amp;locale=es&amp;market_code=es</string>
+	<key>movie</key>
+	<string>v3/movies/{movieId}?classification_id=6&amp;device_identifier=ios&amp;market_code=es</string>
+	<key>movieStreaming</key>
+	<string>v3/me/streamings?classification_id=6&amp;device_identifier=ios&amp;market_code=es</string>
+</dict>
+</plist>

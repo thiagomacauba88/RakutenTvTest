@@ -1,0 +1,6 @@
+framework module Pods_RakutenTvTestTests {
+  umbrella header "Pods-RakutenTvTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
