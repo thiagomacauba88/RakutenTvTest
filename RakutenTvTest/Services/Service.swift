@@ -84,7 +84,6 @@ class Service {
 }
 
 // MARK: - URLRequestExtension
-// handle HTTPURLResponse and dispatch the request
 extension URLRequest {
     
     private func setUnknowErrorFor(serviceResponse: inout ServiceResponse) {
@@ -103,13 +102,6 @@ extension URLRequest {
         }
         
         switch statusCode {
-//        case 401:
-//            serviceResponse.serviceError = ServiceError(code: nil, title: "Unauthorized", detail: nil, statusCode: statusCode, error: "Unauthorized", message: "Unauthorized")
-//        case 403:
-//            // Case 403, version update required
-//            serviceResponse.serviceError = ServiceError(code: nil, title: "Update needed", detail: nil, statusCode: statusCode, error: "UpdateNeeded", message: "Update needed")
-//        case 404:
-//            serviceResponse.serviceError = ServiceError(code: nil, title: "Not Found", detail: nil, statusCode: statusCode, error: "NotFound", message: "Not Found")
         case 400...499:
             guard 400...499 ~= statusCode, let data = serviceResponse.data, let jsonString = String(data: data, encoding: .utf8),
                 let serializedValue = try? JSONDecoder().decode(ServiceError.self, from: data) else {
@@ -133,14 +125,8 @@ extension URLRequest {
     
     // Dispatch URLRequest instance
     private func dispatch(onCompleted completion: @escaping (ServiceResponse) -> Void) {
-        
         URLSession.shared.dataTask(with: self) { data, res, error in
-            
-            //self.handleOAuthCallback(res: res)
-            
             var serviceResponse = ServiceResponse()
-        
-            
             serviceResponse.response = res as? HTTPURLResponse
             serviceResponse.request = self
             serviceResponse.data = data
@@ -163,7 +149,7 @@ extension URLRequest {
             
             }.resume()
     }
-    /// Use this method when there is no need to serialize service payload
+    // Use this method when there is no need to serialize service payload
     func response(succeed success: @escaping (ServiceResponse) -> Void,
                   failed failure: @escaping (ServiceResponse) -> Void,
                   completed completion: @escaping () -> Void) {
@@ -187,12 +173,10 @@ extension URLRequest {
         }
     }
     
-    /// Use this method to serialize object payload
+    // Use this method to serialize object payload
     func response<SuccessObjectType: Codable>(succeed success: @escaping (SuccessObjectType?, ServiceResponse) -> Void,
                                               failed failure: @escaping (ServiceResponse) -> Void,
                                               completed completion: @escaping () -> Void) {
-        
-        
         dispatch { (serviceResponse) in
             print("/* ------ Response "+(serviceResponse.response?.statusCode.description ?? "")+" ------ */")
             if let JSONString = String(data: serviceResponse.data ?? Data(), encoding: String.Encoding.utf8)
@@ -224,7 +208,7 @@ extension URLRequest {
         }
     }
     
-    /// Use this method to serialize array payload
+    // Use this method to serialize array payload
     func response<SuccessObjectType: Codable>(succeed success: @escaping ([SuccessObjectType]?, ServiceResponse) -> Void,
                                               failed failure: @escaping (ServiceResponse) -> Void,
                                               completed completion: @escaping () -> Void) {

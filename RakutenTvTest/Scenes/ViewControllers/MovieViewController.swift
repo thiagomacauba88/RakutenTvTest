@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class MovieViewController: UIViewController{
+class MovieViewController: BaseViewController {
 
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView! {
@@ -26,8 +26,8 @@ class MovieViewController: UIViewController{
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Estrenos Imprencidibles"
-        self.movieList()        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.movieList()
     }
     
     override func viewWillAppear(_ animated: Bool) {

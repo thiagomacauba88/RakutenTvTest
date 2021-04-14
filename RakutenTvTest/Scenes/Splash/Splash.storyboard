@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L8M-oz-1gD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="hKI-SJ-OO3">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="L8M-oz-1gD" customClass="SplashViewController" customModule="RakutenTvTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HEQ-fH-6wD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cGe-Bw-F96">
+                                <rect key="frame" x="57" y="393" width="300" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="58D-sR-1EA"/>
+                                    <constraint firstAttribute="width" constant="300" id="7pU-c5-hfC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxU-9S-MeW">
+                                <rect key="frame" x="10" y="503" width="394" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uch-Dy-33f"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZxU-9S-MeW" firstAttribute="top" secondItem="cGe-Bw-F96" secondAttribute="bottom" id="Fh5-lc-4EK"/>
+                            <constraint firstItem="cGe-Bw-F96" firstAttribute="centerY" secondItem="HEQ-fH-6wD" secondAttribute="centerY" id="TYS-6n-3Hu"/>
+                            <constraint firstItem="cGe-Bw-F96" firstAttribute="centerX" secondItem="HEQ-fH-6wD" secondAttribute="centerX" id="htw-9s-YwH"/>
+                            <constraint firstItem="ZxU-9S-MeW" firstAttribute="leading" secondItem="Uch-Dy-33f" secondAttribute="leading" constant="10" id="llu-HV-wVJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ZxU-9S-MeW" secondAttribute="trailing" constant="10" id="nmS-Hg-uNB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heightConstraint" destination="58D-sR-1EA" id="tGn-hU-Pw5"/>
+                        <outlet property="imageView" destination="cGe-Bw-F96" id="tSv-F6-3TY"/>
+                        <outlet property="textLabel" destination="ZxU-9S-MeW" id="xom-Qw-RoR"/>
+                        <outlet property="verticalConstraint" destination="TYS-6n-3Hu" id="fYI-is-OIk"/>
+                        <outlet property="widthConstraint" destination="7pU-c5-hfC" id="yZz-xZ-Nde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOm-S9-89N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="37.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="1228.5" height="334.5"/>
+    </resources>
+</document>

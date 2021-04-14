@@ -49,6 +49,6 @@ class MovieRouter {
 private extension MovieRouter {
     
     func perform(_ segue: MovieSegue, from source: UIViewController, to controller: UIViewController) {
-        source.navigationController?.pushViewController(controller, animated: true)
+        source.navigationController?.pushViewController(controller, animated: false)
     }
 }

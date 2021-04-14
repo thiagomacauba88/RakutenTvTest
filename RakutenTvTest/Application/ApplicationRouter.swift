@@ -15,7 +15,9 @@ class ApplicationRouter {
     }
     
     // MARK: - Properties
-    fileprivate lazy var signInStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//    fileprivate lazy var signInStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+
+    fileprivate lazy var signInStoryboard: UIStoryboard = UIStoryboard(name: "Splash", bundle: nil)
     
     // MARK: - Lifecycle
     func startApplication(in window: UIWindow?) {
@@ -26,7 +28,8 @@ class ApplicationRouter {
     func startApplication(in window: UIWindow, startPoint: ApplicationStartPoint) {
         switch startPoint {
         case .initial:
-            let viewController = MovieViewController.instantiate(fromStoryboard: signInStoryboard)
+            //let viewController = MovieViewController.instantiate(fromStoryboard: signInStoryboard)
+            let viewController = SplashViewController.instantiate(fromStoryboard: signInStoryboard)
             let rootNavigationController = UINavigationController(rootViewController: viewController)
             setRootNavigationController(rootNavigationController, for: window)
         }

@@ -89,13 +89,13 @@ class MovieDetailViewController: UIViewController {
         }
         self.movieNameLabel.text = self.viewModel.movieItemResponse?.data?.title
         self.ratingLabel.text = self.viewModel.movieItemResponse?.data?.scores?.first?.score?.description
-        self.watchedLabel.text = self.viewModel.movieItemResponse?.data?.scores?.first?.formatted_amount_of_votes
+        self.watchedLabel.text = self.viewModel.movieItemResponse?.data?.scores?.first?.formattedAmountOfVotes
         self.yearLabel.text = self.viewModel.movieItemResponse?.data?.year?.description
         self.movieDescriptionLabel.text = self.viewModel.movieItemResponse?.data?.plot
         if let age = self.viewModel.movieItemResponse?.data?.classification?.age?.description {
             self.ageLabel.text = "+" + age
         }
-        self.priceLabel.text = self.viewModel.movieItemResponse?.data?.order_options?.first?.price
+        self.priceLabel.text = self.viewModel.movieItemResponse?.data?.orderOptions?.first?.price
     }
     
     private func setGradient() {
@@ -137,19 +137,19 @@ extension MovieDetailViewController {
     
     func movieStreaming(movieId: String) {
         let movieStreamingRequest = MovieStreamingRequest()
-        movieStreamingRequest.audio_language = "SPA"
-        movieStreamingRequest.audio_quality = "2.0"
-        movieStreamingRequest.content_id = movieId
-        movieStreamingRequest.content_type = "movies"
-        movieStreamingRequest.device_serial = "AABBCCDDCC112233"
-        movieStreamingRequest.device_stream_video_quality = "FHD"
+        movieStreamingRequest.audioLanguage = "SPA"
+        movieStreamingRequest.audioQuality = "2.0"
+        movieStreamingRequest.contentId = movieId
+        movieStreamingRequest.contentType = "movies"
+        movieStreamingRequest.deviceSerial = "AABBCCDDCC112233"
+        movieStreamingRequest.deviceStreamVideoQuality = "FHD"
         movieStreamingRequest.player = "ios:PD-NONE"
-        movieStreamingRequest.subtitle_language = "MIS"
-        movieStreamingRequest.video_type = "trailer"
+        movieStreamingRequest.subtitleLanguage = "MIS"
+        movieStreamingRequest.videoType = "trailer"
         self.view.startLoading()
         self.viewModel.movieStreaming(movieStreamingRequest: movieStreamingRequest)
             .observe(on: MainScheduler.instance).subscribe(onNext: { (response) in
-                if let url = self.viewModel.movieStreamingResponse?.data?.stream_infos?.first?.url {
+                if let url = self.viewModel.movieStreamingResponse?.data?.streamInfoListResponse?.first?.url {
                     self.playStreaming(url: url)
                 }
             }, onError: { (error) in

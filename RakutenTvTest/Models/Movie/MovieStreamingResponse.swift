@@ -14,7 +14,11 @@ struct MovieStreamingResponse: Codable {
 
 struct DataStreamingResponse: Codable {
     
-    var stream_infos: [StreamInfoResponse]?
+    var streamInfoListResponse: [StreamInfoResponse]?
+    
+    enum CodingKeys: String, CodingKey {
+        case streamInfoListResponse = "stream_infos"
+    }
 }
 
 struct StreamInfoResponse: Codable {

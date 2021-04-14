@@ -37,6 +37,9 @@
 		0E6F10B725E54A8800AAEDE4 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F10B625E54A8800AAEDE4 /* UIApplicationExtension.swift */; };
 		0E702B2C25E5AC530033886A /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E702B2B25E5AC530033886A /* ApplicationRouter.swift */; };
 		0E702B3125E5AD330033886A /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E702B3025E5AD330033886A /* MovieRouter.swift */; };
+		0EB81A29261A025300319131 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB81A28261A025300319131 /* SplashViewController.swift */; };
+		0EB81A31261A027F00319131 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB81A30261A027F00319131 /* Splash.storyboard */; };
+		0EB81A83261A28D200319131 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB81A82261A28D200319131 /* BaseViewController.swift */; };
 		0ED65AFB25E8035700C06DD9 /* MovieStreamingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED65AFA25E8035700C06DD9 /* MovieStreamingRequest.swift */; };
 		0ED65B0025E804D400C06DD9 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED65AFF25E804D400C06DD9 /* EncodableExtension.swift */; };
 		0ED65B0525E804FE00C06DD9 /* MovieStreamingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED65B0425E804FE00C06DD9 /* MovieStreamingResponse.swift */; };
@@ -99,6 +102,9 @@
 		0E6F10B625E54A8800AAEDE4 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
 		0E702B2B25E5AC530033886A /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		0E702B3025E5AD330033886A /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
+		0EB81A28261A025300319131 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		0EB81A30261A027F00319131 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		0EB81A82261A28D200319131 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0ED65AFA25E8035700C06DD9 /* MovieStreamingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStreamingRequest.swift; sourceTree = "<group>"; };
 		0ED65AFF25E804D400C06DD9 /* EncodableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		0ED65B0425E804FE00C06DD9 /* MovieStreamingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStreamingResponse.swift; sourceTree = "<group>"; };
@@ -290,6 +296,7 @@
 		0E6F104525E4760B00AAEDE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0EB81A26261A023A00319131 /* Splash */,
 				0E4812E225E57B080045EA20 /* ViewControllers */,
 				0E4812E125E57B030045EA20 /* Cells */,
 				0E6F109325E5472600AAEDE4 /* ViewModels */,
@@ -368,6 +375,7 @@
 				0E696AA525E6C250004F347D /* UIButtonExtension.swift */,
 				0E6F10B625E54A8800AAEDE4 /* UIApplicationExtension.swift */,
 				0E6F10AB25E549BE00AAEDE4 /* UIViewExtension.swift */,
+				0EB81A82261A28D200319131 /* BaseViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,6 +386,23 @@
 				0E6F10B125E54A1000AAEDE4 /* LoadingConvenience.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		0EB81A26261A023A00319131 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				0EB81A27261A024300319131 /* ViewControllers */,
+				0EB81A30261A027F00319131 /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		0EB81A27261A024300319131 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EB81A28261A025300319131 /* SplashViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		19A96B6CB785BB385B14FB45 /* Pods */ = {
@@ -516,6 +541,7 @@
 				0E6F101725E4759E00AAEDE4 /* Assets.xcassets in Resources */,
 				0E6F107C25E540B700AAEDE4 /* URLs.plist in Resources */,
 				0E6F101525E4759C00AAEDE4 /* Main.storyboard in Resources */,
+				0EB81A31261A027F00319131 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,7 +672,9 @@
 				0E4812E425E57B200045EA20 /* MovieTableViewCell.swift in Sources */,
 				0E702B2C25E5AC530033886A /* ApplicationRouter.swift in Sources */,
 				0E2BEDDB25E824360002AE49 /* UIViewControllerExtension.swift in Sources */,
+				0EB81A29261A025300319131 /* SplashViewController.swift in Sources */,
 				0E6F105925E4768900AAEDE4 /* Session.swift in Sources */,
+				0EB81A83261A28D200319131 /* BaseViewController.swift in Sources */,
 				0E702B3125E5AD330033886A /* MovieRouter.swift in Sources */,
 				0E6F10B225E54A1000AAEDE4 /* LoadingConvenience.swift in Sources */,
 				0E2BEDE325E824BF0002AE49 /* BottomAlertViewController.swift in Sources */,

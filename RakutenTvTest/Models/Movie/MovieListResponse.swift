@@ -26,17 +26,33 @@ struct MovieResponse: Codable {
     
     var id: String?
     var title: String?
-    var original_title: String?
+    var originalTitle: String?
     var plot: String?
     var year: Int?
     var duration: Int?
     var label: String?
     var classification: ClassificationResponse?
     var images: ImagesResponse?
-    var highlighted_score: HighlightedScoreResponse?
+    var highlightedScore: HighlightedScoreResponse?
     var rating: RatingResponse?
     var scores: [ScoreResponse]?
-    var order_options: [OrderOptionResponse]?
+    var orderOptions: [OrderOptionResponse]?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case originalTitle = "original_title"
+        case plot
+        case year
+        case duration
+        case label
+        case classification
+        case images
+        case highlightedScore = "highlighted_score"
+        case rating
+        case scores
+        case orderOptions = "order_options"
+    }
 }
 
 struct ClassificationResponse: Codable {
@@ -54,8 +70,14 @@ struct ImagesResponse: Codable {
 struct HighlightedScoreResponse: Codable {
     
     var score: Double?
-    var amount_of_votes: Int?
-    var formatted_amount_of_votes: String?
+    var amountOfVotes: Int?
+    var formattedAmountOfVotes: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case score
+        case amountOfVotes = "amount_of_votes"
+        case formattedAmountOfVotes = "formatted_amount_of_votes"
+    }
 }
 
 struct RatingResponse: Codable {
@@ -67,7 +89,12 @@ struct RatingResponse: Codable {
 struct ScoreResponse: Codable {
     
     var score: Double?
-    var formatted_amount_of_votes: String?
+    var formattedAmountOfVotes: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case score
+        case formattedAmountOfVotes = "formatted_amount_of_votes"
+    }
 }
 
 struct OrderOptionResponse: Codable {

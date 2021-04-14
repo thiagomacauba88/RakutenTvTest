@@ -9,13 +9,25 @@ import UIKit
 
 class MovieStreamingRequest: Codable {
 
-    var audio_language: String?
-    var audio_quality: String?
-    var content_id: String?
-    var content_type: String?
-    var device_serial: String?
-    var device_stream_video_quality: String?
+    var audioLanguage: String?
+    var audioQuality: String?
+    var contentId: String?
+    var contentType: String?
+    var deviceSerial: String?
+    var deviceStreamVideoQuality: String?
     var player: String?
-    var subtitle_language: String?
-    var video_type: String?
+    var subtitleLanguage: String?
+    var videoType: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case audioLanguage = "audio_language"
+        case audioQuality = "audio_quality"
+        case contentId = "content_id"
+        case contentType = "content_type"
+        case deviceSerial = "device_serial"
+        case deviceStreamVideoQuality = "device_stream_video_quality"
+        case player
+        case subtitleLanguage = "subtitle_language"
+        case videoType = "video_type"
+    }
 }
