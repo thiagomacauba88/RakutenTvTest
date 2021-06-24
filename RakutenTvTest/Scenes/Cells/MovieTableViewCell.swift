@@ -10,6 +10,9 @@ import Kingfisher
 
 class MovieTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
+    let downloadQueue = DispatchQueue(label: "com.app.downloadQueue", attributes: .concurrent)
+    
     // MARK: - IBOutlets
     @IBOutlet weak var movieImageView: UIImageView! {
         didSet {
@@ -38,13 +41,11 @@ class MovieTableViewCell: UITableViewCell {
 
     // MARK: - MISC
     func setup(movie: MovieResponse) {
-        DispatchQueue.global().async { [weak self] in
+        downloadQueue.async { [unowned self] in
             if let snapshot = movie.images?.snapshot {
                 if let url = URL(string: snapshot) {
                     let resources = ImageResource(downloadURL: url, cacheKey: snapshot)
-                    DispatchQueue.main.async {
-                        self?.movieImageView.kf.setImage(with: resources)
-                    }
+                        self.movieImageView.kf.setImage(with: resources)
                 }
             }
         }
